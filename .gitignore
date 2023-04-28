@@ -7,10 +7,10 @@ build/
 .settings/
 
 # MCreator workspace
-.mcreator/
+.mcreator/gradleCache
+.mcreator/setupInfo
+.mcreator/vcsInfo
 
-# Minecraft client/server files
-run/
 
 # MacOS system files
 .DS_STORE
