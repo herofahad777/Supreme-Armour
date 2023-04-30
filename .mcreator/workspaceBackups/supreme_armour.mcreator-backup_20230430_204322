@@ -1,10 +1,31 @@
 {
   "id_map": {},
-  "mod_elements": [],
+  "mod_elements": [
+    {
+      "name": "Swat",
+      "type": "armor",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "swat",
+      "metadata": {
+        "eh": true,
+        "el": false,
+        "eb": false,
+        "ec": false
+      }
+    }
+  ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
-    "en_us": {}
+    "en_us": {
+      "item.supreme_armour.swat_helmet": "Swat Helmet",
+      "item.supreme_armour.swat_leggings": "Swat Leggings",
+      "item.supreme_armour.swat_chestplate": "Swat Body",
+      "item.supreme_armour.swat_boots": "Swat Boots"
+    }
   },
   "foldersRoot": {
     "name": "~",
