@@ -16,7 +16,6 @@ public static class ModelSwat_Helmet extends EntityModel<Entity> {
 	private final ModelRenderer cube_r4;
 	private final ModelRenderer cube_r5;
 	private final ModelRenderer cube_r6;
-	private final ModelRenderer bb_main;
 	private final ModelRenderer cube_r7;
 	private final ModelRenderer cube_r8;
 	private final ModelRenderer cube_r9;
@@ -92,25 +91,22 @@ public static class ModelSwat_Helmet extends EntityModel<Entity> {
 		setRotationAngle(cube_r6, 0.0F, -0.7854F, 0.0F);
 		cube_r6.setTextureOffset(0, 55).addBox(-1.0F, -32.0F, -7.0F, 2.0F, 8.0F, 1.0F, 0.0F, false);
 
-		bb_main = new ModelRenderer(this);
-		bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
-
 		cube_r7 = new ModelRenderer(this);
-		cube_r7.setRotationPoint(0.0F, 0.0F, 0.0F);
-		bb_main.addChild(cube_r7);
+		cube_r7.setRotationPoint(0.0035F, 28.7841F, -0.3607F);
+		Smoother.addChild(cube_r7);
 		setRotationAngle(cube_r7, -0.6109F, 1.5708F, 0.0F);
 		cube_r7.setTextureOffset(0, 62).addBox(-4.0F, -24.0F, -23.0F, 8.0F, 1.0F, 1.0F, 0.0F, false);
 
 		cube_r8 = new ModelRenderer(this);
-		cube_r8.setRotationPoint(0.0F, 0.0F, 0.0F);
-		bb_main.addChild(cube_r8);
-		setRotationAngle(cube_r8, -0.6109F, -1.5708F, 0.0F);
+		cube_r8.setRotationPoint(0.0035F, 28.7841F, -0.3607F);
+		Smoother.addChild(cube_r8);
+		setRotationAngle(cube_r8, -0.6109F, 0.0F, 0.0F);
 		cube_r8.setTextureOffset(0, 62).addBox(-4.0F, -24.0F, -23.0F, 8.0F, 1.0F, 1.0F, 0.0F, false);
 
 		cube_r9 = new ModelRenderer(this);
-		cube_r9.setRotationPoint(0.0F, 0.0F, 0.0F);
-		bb_main.addChild(cube_r9);
-		setRotationAngle(cube_r9, -0.6109F, 0.0F, 0.0F);
+		cube_r9.setRotationPoint(0.0035F, 28.7841F, -0.3607F);
+		Smoother.addChild(cube_r9);
+		setRotationAngle(cube_r9, -0.6109F, -1.5708F, 0.0F);
 		cube_r9.setTextureOffset(0, 62).addBox(-4.0F, -24.0F, -23.0F, 8.0F, 1.0F, 1.0F, 0.0F, false);
 	}
 
@@ -118,7 +114,6 @@ public static class ModelSwat_Helmet extends EntityModel<Entity> {
 	public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red,
 			float green, float blue, float alpha) {
 		Helmet.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-		bb_main.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
 	}
 
 	public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
@@ -129,7 +124,5 @@ public static class ModelSwat_Helmet extends EntityModel<Entity> {
 
 	public void setRotationAngles(float f, float f1, float f2, float f3, float f4, float f5, Entity e) {
 		super.setRotationAngles(f, f1, f2, f3, f4, f5, e);
-		this.Helmet.rotateAngleY = f3 / (180F / (float) Math.PI);
-		this.Helmet.rotateAngleX = f4 / (180F / (float) Math.PI);
 	}
 }

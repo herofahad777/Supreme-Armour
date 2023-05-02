@@ -11,7 +11,7 @@
       "registry_name": "swat",
       "metadata": {
         "eh": true,
-        "el": false,
+        "el": true,
         "eb": false,
         "ec": false
       }

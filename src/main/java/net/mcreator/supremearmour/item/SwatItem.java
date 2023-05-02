@@ -6,6 +6,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.api.distmarker.OnlyIn;
 import net.minecraftforge.api.distmarker.Dist;
 
+import net.minecraft.util.math.MathHelper;
 import net.minecraft.util.ResourceLocation;
 import net.minecraft.item.crafting.Ingredient;
 import net.minecraft.item.ItemStack;
@@ -100,7 +101,198 @@ public class SwatItem extends SupremeArmourModElements.ModElement {
 				return "supreme_armour:textures/swat_helmet_tex.png";
 			}
 		}.setRegistryName("swat_helmet"));
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.CHEST, new Item.Properties().group(ItemGroup.COMBAT)) {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public BipedModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlotType slot, BipedModel defaultModel) {
+				BipedModel armorModel = new BipedModel(1);
+				armorModel.bipedBody = new ModelSwat_Vest().Body;
+				armorModel.bipedLeftArm = new ModelSwat_Vest().LeftArm;
+				armorModel.bipedRightArm = new ModelSwat_Vest().RightArm;
+				armorModel.isSneak = living.isSneaking();
+				armorModel.isSitting = defaultModel.isSitting;
+				armorModel.isChild = living.isChild();
+				return armorModel;
+			}
+
+			@Override
+			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
+				return "supreme_armour:textures/swat_chestplate_tex.png";
+			}
+		}.setRegistryName("swat_chestplate"));
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.LEGS, new Item.Properties().group(ItemGroup.COMBAT)) {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public BipedModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlotType slot, BipedModel defaultModel) {
+				BipedModel armorModel = new BipedModel(1);
+				armorModel.bipedLeftLeg = new ModelSwat_Leggings().LeftLeg;
+				armorModel.bipedRightLeg = new ModelSwat_Leggings().RightLeg;
+				armorModel.isSneak = living.isSneaking();
+				armorModel.isSitting = defaultModel.isSitting;
+				armorModel.isChild = living.isChild();
+				return armorModel;
+			}
+
+			@Override
+			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
+				return "supreme_armour:textures/swat_pants_tex.png";
+			}
+		}.setRegistryName("swat_leggings"));
+		elements.items.add(() -> new ArmorItem(armormaterial, EquipmentSlotType.FEET, new Item.Properties().group(ItemGroup.COMBAT)) {
+			@Override
+			@OnlyIn(Dist.CLIENT)
+			public BipedModel getArmorModel(LivingEntity living, ItemStack stack, EquipmentSlotType slot, BipedModel defaultModel) {
+				BipedModel armorModel = new BipedModel(1);
+				armorModel.bipedLeftLeg = new ModelSwat_Boots().LeftLeg;
+				armorModel.bipedRightLeg = new ModelSwat_Boots().RightLeg;
+				armorModel.isSneak = living.isSneaking();
+				armorModel.isSitting = defaultModel.isSitting;
+				armorModel.isChild = living.isChild();
+				return armorModel;
+			}
+
+			@Override
+			public String getArmorTexture(ItemStack stack, Entity entity, EquipmentSlotType slot, String type) {
+				return "supreme_armour:textures/swat_boots_tex.png";
+			}
+		}.setRegistryName("swat_boots"));
 	}
+	// Made with Blockbench 4.7.2
+	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
+	// Paste this class into your mod and generate all required imports
+	public static class ModelSwat_Leggings extends EntityModel<Entity> {
+		private final ModelRenderer RightLeg;
+		private final ModelRenderer LeftLeg;
+		public ModelSwat_Leggings() {
+			textureWidth = 128;
+			textureHeight = 128;
+			RightLeg = new ModelRenderer(this);
+			RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
+			RightLeg.setTextureOffset(0, 114).addBox(-3.0F, 0.0F, -3.0F, 6.0F, 8.0F, 6.0F, 0.0F, false);
+			LeftLeg = new ModelRenderer(this);
+			LeftLeg.setRotationPoint(1.9F, 12.0F, 0.0F);
+			LeftLeg.setTextureOffset(0, 114).addBox(-3.0F, 0.0F, -3.0F, 6.0F, 8.0F, 6.0F, 0.0F, false);
+		}
+
+		@Override
+		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
+				float alpha) {
+			RightLeg.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+			LeftLeg.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+		}
+
+		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+			modelRenderer.rotateAngleX = x;
+			modelRenderer.rotateAngleY = y;
+			modelRenderer.rotateAngleZ = z;
+		}
+
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+			this.LeftLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * -1.0F * f1;
+			this.RightLeg.rotateAngleX = MathHelper.cos(f * 1.0F) * 1.0F * f1;
+		}
+	}
+
+	// Made with Blockbench 4.7.2
+	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
+	// Paste this class into your mod and generate all required imports
+	public static class ModelSwat_Vest extends EntityModel<Entity> {
+		private final ModelRenderer Body;
+		private final ModelRenderer LeftArm;
+		private final ModelRenderer RightArm;
+		private final ModelRenderer Smoother;
+		public ModelSwat_Vest() {
+			textureWidth = 64;
+			textureHeight = 64;
+			Body = new ModelRenderer(this);
+			Body.setRotationPoint(0.0F, 0.0F, 0.0F);
+			Body.setTextureOffset(25, 45).addBox(1.0F, 9.0F, -4.0F, 3.0F, 3.0F, 1.0F, 0.0F, false);
+			Body.setTextureOffset(25, 45).addBox(-4.0F, 9.0F, -4.0F, 3.0F, 3.0F, 1.0F, 0.0F, false);
+			Body.setTextureOffset(25, 45).addBox(-4.0F, 9.0F, 3.0F, 3.0F, 3.0F, 1.0F, 0.0F, false);
+			Body.setTextureOffset(26, 46).addBox(0.0F, 9.0F, 3.0F, 3.0F, 3.0F, 1.0F, 0.0F, false);
+			Body.setTextureOffset(0, 51).addBox(-4.0F, 0.0F, -3.0F, 8.0F, 12.0F, 1.0F, 0.0F, false);
+			Body.setTextureOffset(0, 51).addBox(-4.0F, 0.0F, 2.0F, 8.0F, 12.0F, 1.0F, 0.0F, false);
+			Body.setTextureOffset(20, 48).addBox(-3.0F, 2.0F, 3.0F, 6.0F, 1.0F, 1.0F, 0.0F, false);
+			Body.setTextureOffset(23, 48).addBox(-2.0F, 1.0F, 3.0F, 4.0F, 1.0F, 1.0F, 0.0F, false);
+			Body.setTextureOffset(24, 48).addBox(-1.0F, 0.0F, 3.0F, 2.0F, 1.0F, 1.0F, 0.0F, false);
+			Body.setTextureOffset(0, 45).addBox(-4.0F, 3.0F, 3.0F, 8.0F, 5.0F, 1.0F, 0.0F, false);
+			LeftArm = new ModelRenderer(this);
+			LeftArm.setRotationPoint(5.0F, 2.0F, 0.0F);
+			Body.addChild(LeftArm);
+			LeftArm.setTextureOffset(21, 44).addBox(4.0F, 3.0F, -2.0F, 1.0F, 3.0F, 3.0F, 0.0F, false);
+			LeftArm.setTextureOffset(19, 44).addBox(-1.0F, -3.0F, -3.0F, 5.0F, 1.0F, 6.0F, 0.0F, false);
+			LeftArm.setTextureOffset(19, 44).addBox(-1.0F, 10.0F, -3.0F, 5.0F, 1.0F, 6.0F, 0.0F, false);
+			LeftArm.setTextureOffset(54, 51).addBox(-1.0F, -2.0F, -3.0F, 4.0F, 12.0F, 1.0F, 0.0F, false);
+			LeftArm.setTextureOffset(54, 48).addBox(-2.0F, -2.0F, -2.0F, 1.0F, 12.0F, 4.0F, 0.0F, false);
+			LeftArm.setTextureOffset(52, 46).addBox(3.0F, -2.0F, -3.0F, 1.0F, 12.0F, 6.0F, 0.0F, false);
+			LeftArm.setTextureOffset(32, 51).addBox(-1.0F, -2.0F, 2.0F, 4.0F, 12.0F, 1.0F, 0.0F, false);
+			RightArm = new ModelRenderer(this);
+			RightArm.setRotationPoint(-5.0F, 2.0F, 0.0F);
+			Body.addChild(RightArm);
+			RightArm.setTextureOffset(21, 44).addBox(-5.0F, 3.0F, -2.0F, 1.0F, 3.0F, 3.0F, 0.0F, false);
+			RightArm.setTextureOffset(19, 44).addBox(-4.0F, -3.0F, -3.0F, 5.0F, 1.0F, 6.0F, 0.0F, false);
+			RightArm.setTextureOffset(19, 44).addBox(-4.0F, 10.0F, -3.0F, 5.0F, 1.0F, 6.0F, 0.0F, false);
+			RightArm.setTextureOffset(54, 51).addBox(-3.0F, -2.0F, -3.0F, 4.0F, 12.0F, 1.0F, 0.0F, false);
+			RightArm.setTextureOffset(52, 47).addBox(-4.0F, -2.0F, -3.0F, 1.0F, 12.0F, 5.0F, 0.0F, false);
+			RightArm.setTextureOffset(54, 48).addBox(1.0F, -2.0F, -2.0F, 1.0F, 12.0F, 4.0F, 0.0F, false);
+			RightArm.setTextureOffset(19, 51).addBox(-4.0F, -2.0F, 2.0F, 5.0F, 12.0F, 1.0F, 0.0F, false);
+			Smoother = new ModelRenderer(this);
+			Smoother.setRotationPoint(0.0F, 24.0F, 0.0F);
+		}
+
+		@Override
+		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
+				float alpha) {
+			Body.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+			Smoother.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+		}
+
+		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+			modelRenderer.rotateAngleX = x;
+			modelRenderer.rotateAngleY = y;
+			modelRenderer.rotateAngleZ = z;
+		}
+
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+			this.RightArm.rotateAngleX = MathHelper.cos(f * 0.6662F + (float) Math.PI) * f1;
+			this.LeftArm.rotateAngleX = MathHelper.cos(f * 0.6662F) * f1;
+		}
+	}
+
+	// Made with Blockbench 4.7.2
+	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
+	// Paste this class into your mod and generate all required imports
+	public static class ModelSwat_Boots extends EntityModel<Entity> {
+		private final ModelRenderer RightLeg;
+		private final ModelRenderer LeftLeg;
+		public ModelSwat_Boots() {
+			textureWidth = 128;
+			textureHeight = 128;
+			RightLeg = new ModelRenderer(this);
+			RightLeg.setRotationPoint(-1.9F, 12.0F, 0.0F);
+			RightLeg.setTextureOffset(0, 117).addBox(-3.0F, 7.0F, -3.0F, 6.0F, 5.0F, 6.0F, 0.0F, false);
+			LeftLeg = new ModelRenderer(this);
+			LeftLeg.setRotationPoint(1.9F, 12.0F, 0.0F);
+			LeftLeg.setTextureOffset(0, 117).addBox(-3.0F, 7.0F, -3.0F, 6.0F, 5.0F, 6.0F, 0.0F, false);
+		}
+
+		@Override
+		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
+				float alpha) {
+			RightLeg.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+			LeftLeg.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
+		}
+
+		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
+			modelRenderer.rotateAngleX = x;
+			modelRenderer.rotateAngleY = y;
+			modelRenderer.rotateAngleZ = z;
+		}
+
+		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
+		}
+	}
+
 	// Made with Blockbench 4.7.1
 	// Exported for Minecraft version 1.15 - 1.16 with MCP mappings
 	// Paste this class into your mod and generate all required imports
@@ -118,7 +310,6 @@ public class SwatItem extends SupremeArmourModElements.ModElement {
 		private final ModelRenderer cube_r4;
 		private final ModelRenderer cube_r5;
 		private final ModelRenderer cube_r6;
-		private final ModelRenderer bb_main;
 		private final ModelRenderer cube_r7;
 		private final ModelRenderer cube_r8;
 		private final ModelRenderer cube_r9;
@@ -179,22 +370,20 @@ public class SwatItem extends SupremeArmourModElements.ModElement {
 			Smoother.addChild(cube_r6);
 			setRotationAngle(cube_r6, 0.0F, -0.7854F, 0.0F);
 			cube_r6.setTextureOffset(0, 55).addBox(-1.0F, -32.0F, -7.0F, 2.0F, 8.0F, 1.0F, 0.0F, false);
-			bb_main = new ModelRenderer(this);
-			bb_main.setRotationPoint(0.0F, 24.0F, 0.0F);
 			cube_r7 = new ModelRenderer(this);
-			cube_r7.setRotationPoint(0.0F, 0.0F, 0.0F);
-			bb_main.addChild(cube_r7);
+			cube_r7.setRotationPoint(0.0035F, 28.7841F, -0.3607F);
+			Smoother.addChild(cube_r7);
 			setRotationAngle(cube_r7, -0.6109F, 1.5708F, 0.0F);
 			cube_r7.setTextureOffset(0, 62).addBox(-4.0F, -24.0F, -23.0F, 8.0F, 1.0F, 1.0F, 0.0F, false);
 			cube_r8 = new ModelRenderer(this);
-			cube_r8.setRotationPoint(0.0F, 0.0F, 0.0F);
-			bb_main.addChild(cube_r8);
-			setRotationAngle(cube_r8, -0.6109F, -1.5708F, 0.0F);
+			cube_r8.setRotationPoint(0.0035F, 28.7841F, -0.3607F);
+			Smoother.addChild(cube_r8);
+			setRotationAngle(cube_r8, -0.6109F, 0.0F, 0.0F);
 			cube_r8.setTextureOffset(0, 62).addBox(-4.0F, -24.0F, -23.0F, 8.0F, 1.0F, 1.0F, 0.0F, false);
 			cube_r9 = new ModelRenderer(this);
-			cube_r9.setRotationPoint(0.0F, 0.0F, 0.0F);
-			bb_main.addChild(cube_r9);
-			setRotationAngle(cube_r9, -0.6109F, 0.0F, 0.0F);
+			cube_r9.setRotationPoint(0.0035F, 28.7841F, -0.3607F);
+			Smoother.addChild(cube_r9);
+			setRotationAngle(cube_r9, -0.6109F, -1.5708F, 0.0F);
 			cube_r9.setTextureOffset(0, 62).addBox(-4.0F, -24.0F, -23.0F, 8.0F, 1.0F, 1.0F, 0.0F, false);
 		}
 
@@ -202,7 +391,6 @@ public class SwatItem extends SupremeArmourModElements.ModElement {
 		public void render(MatrixStack matrixStack, IVertexBuilder buffer, int packedLight, int packedOverlay, float red, float green, float blue,
 				float alpha) {
 			Helmet.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
-			bb_main.render(matrixStack, buffer, packedLight, packedOverlay, red, green, blue, alpha);
 		}
 
 		public void setRotationAngle(ModelRenderer modelRenderer, float x, float y, float z) {
@@ -212,8 +400,6 @@ public class SwatItem extends SupremeArmourModElements.ModElement {
 		}
 
 		public void setRotationAngles(Entity e, float f, float f1, float f2, float f3, float f4) {
-			this.Helmet.rotateAngleY = f3 / (180F / (float) Math.PI);
-			this.Helmet.rotateAngleX = f4 / (180F / (float) Math.PI);
 		}
 	}
 }

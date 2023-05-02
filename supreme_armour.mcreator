@@ -11,9 +11,24 @@
       "registry_name": "swat",
       "metadata": {
         "eh": true,
-        "el": false,
-        "eb": false,
-        "ec": false
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "Test",
+      "type": "armor",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "ids": {},
+      "registry_name": "test",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
       }
     }
   ],
@@ -22,8 +37,12 @@
   "language_map": {
     "en_us": {
       "item.supreme_armour.swat_helmet": "Swat Helmet",
+      "item.supreme_armour.test_chestplate": "Test Body",
       "item.supreme_armour.swat_leggings": "Swat Leggings",
+      "item.supreme_armour.test_leggings": "Test Leggings",
       "item.supreme_armour.swat_chestplate": "Swat Body",
+      "item.supreme_armour.test_boots": "Test Boots",
+      "item.supreme_armour.test_helmet": "Test Helmet",
       "item.supreme_armour.swat_boots": "Swat Boots"
     }
   },
