@@ -15,40 +15,47 @@
     },
     "armorTextureFile": "test_arniryr",
     "helmetName": "Swat Helmet",
-    "bodyName": "Swat Body",
-    "leggingsName": "Swat Leggings",
+    "bodyName": "Swat Vest",
+    "leggingsName": "Swat Pants",
     "bootsName": "Swat Boots",
     "helmetSpecialInfo": [],
     "bodySpecialInfo": [],
     "leggingsSpecialInfo": [],
     "bootsSpecialInfo": [],
-    "helmetModelName": "ModelSwat_Helmet",
+    "helmetModelName": "ModelSwat_Armor",
     "helmetModelPart": "Helmet",
-    "helmetModelTexture": "swat_helmet_tex.png",
-    "bodyModelName": "ModelSwat_Vest",
+    "helmetModelTexture": "swat_armor_texblack.png",
+    "bodyModelName": "ModelSwat_Armor",
     "bodyModelPart": "Body",
     "armsModelPartL": "LeftArm",
     "armsModelPartR": "RightArm",
-    "bodyModelTexture": "swat_chestplate_tex.png",
-    "leggingsModelName": "ModelSwat_Leggings",
+    "bodyModelTexture": "swat_armor_texblack.png",
+    "leggingsModelName": "ModelSwat_Armor",
     "leggingsModelPartL": "LeftLeg",
     "leggingsModelPartR": "RightLeg",
-    "leggingsModelTexture": "swat_pants_tex.png",
-    "bootsModelName": "ModelSwat_Boots",
-    "bootsModelPartL": "LeftLeg",
-    "bootsModelPartR": "RightLeg",
-    "bootsModelTexture": "swat_boots_tex.png",
+    "leggingsModelTexture": "swat_armor_texblack.png",
+    "bootsModelName": "ModelSwat_Armor",
+    "bootsModelPartL": "Leftboot",
+    "bootsModelPartR": "Rightboot",
+    "bootsModelTexture": "swat_armor_texblack.png",
     "maxDamage": 25,
     "damageValueHelmet": 2,
     "damageValueBody": 6,
     "damageValueLeggings": 5,
     "damageValueBoots": 2,
     "enchantability": 9,
-    "toughness": 0.0,
+    "toughness": 0.5,
     "knockbackResistance": 0.0,
     "equipSound": {
-      "value": ""
+      "value": "item.armor.equip_leather"
     },
-    "repairItems": []
+    "repairItems": [
+      {
+        "value": "Items.LEATHER"
+      },
+      {
+        "value": "Items.IRON_INGOT"
+      }
+    ]
   }
 }
