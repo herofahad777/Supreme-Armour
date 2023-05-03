@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "supreme_armor:items/swat_helmet_screenshot"
+  }
+}
