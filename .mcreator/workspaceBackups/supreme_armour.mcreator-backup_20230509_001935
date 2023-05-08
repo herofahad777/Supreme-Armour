@@ -1,0 +1,66 @@
+{
+  "mod_elements": [
+    {
+      "name": "Swat",
+      "type": "armor",
+      "sortid": 1,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swat",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      }
+    },
+    {
+      "name": "SupremeArmour",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supreme_armour"
+    }
+  ],
+  "variable_elements": [],
+  "sound_elements": [],
+  "language_map": {
+    "en_us": {
+      "item.supreme_armor.swat_leggings": "Swat Pants",
+      "item.supreme_armour.swat_helmet": "Swat Helmet",
+      "item.supreme_armor.swat_boots": "Swat Boots",
+      "item.supreme_armour.swat_leggings": "Swat Pants",
+      "item.supreme_armor.swat_helmet": "Swat Helmet",
+      "item.supreme_armor.swat_chestplate": "Swat Vest",
+      "itemGroup.tabsupreme_armour": "Supreme Armour",
+      "item.supreme_armour.swat_chestplate": "Swat Vest",
+      "item.supreme_armour.swat_boots": "Swat Boots"
+    }
+  },
+  "foldersRoot": {
+    "name": "~",
+    "children": []
+  },
+  "workspaceSettings": {
+    "modid": "supreme_armour",
+    "modName": "Supreme Armour",
+    "version": "0.0.1",
+    "description": "Add a varity of 3D armors to the game",
+    "author": "Herofahad777, MCreator",
+    "websiteURL": "https://mcreator.net",
+    "license": "Academic Free License v3.0",
+    "disableForgeVersionCheck": true,
+    "serverSideOnly": false,
+    "modPicture": "logo",
+    "requiredMods": [],
+    "dependencies": [],
+    "dependants": [],
+    "mcreatorDependencies": [],
+    "currentGenerator": "forge-1.16.5",
+    "credits": "Created using mod maker MCreator - https://mcreator.net/about",
+    "modElementsPackage": "net.mcreator.supremearmor",
+    "lockBaseModFiles": false
+  },
+  "mcreatorVersion": 202200348217
+}

@@ -3,18 +3,16 @@ loaderVersion="[36,)"
 license="Academic Free License v3.0"
 
 [[mods]]
-modId="supreme_armor"
+modId="supreme_armour"
 version="0.0.1"
-displayName="Supreme Armor"
+displayName="Supreme Armour"
 credits="Created using mod maker MCreator - https://mcreator.net/about"
 displayURL="https://mcreator.net"
 logoFile="logo.png"
 authors="Herofahad777, MCreator"
-description='''
-Add a varity of armors to the game
-'''
+description='''Add a varity of 3D armors to the game'''
 
-[[dependencies.supreme_armor]]
+[[dependencies.supreme_armour]]
     modId="minecraft"
     mandatory=true
     versionRange="[1.16.5]"
