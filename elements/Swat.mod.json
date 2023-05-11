@@ -3,17 +3,17 @@
   "_type": "armor",
   "definition": {
     "enableHelmet": true,
-    "textureHelmet": "swat_helmet_screenshot",
+    "textureHelmet": "swat_armor_helmet",
     "enableBody": true,
-    "textureBody": "dgsy",
+    "textureBody": "swat_armor_vest",
     "enableLeggings": true,
-    "textureLeggings": "dgsy",
+    "textureLeggings": "swat_armor_leggings",
     "enableBoots": true,
-    "textureBoots": "dgsy",
+    "textureBoots": "swat_armor_boots",
     "creativeTab": {
       "value": "CUSTOM:SupremeArmour"
     },
-    "armorTextureFile": "test_arniryr",
+    "armorTextureFile": "a",
     "helmetName": "Swat Helmet",
     "bodyName": "Swat Vest",
     "leggingsName": "Swat Pants",

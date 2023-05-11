@@ -13,6 +13,14 @@
         "eb": true,
         "ec": true
       }
+    },
+    {
+      "name": "SupremeArmour",
+      "type": "tab",
+      "sortid": 2,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "supreme_armour"
     }
   ],
   "variable_elements": [],
@@ -25,6 +33,7 @@
       "item.supreme_armour.swat_leggings": "Swat Pants",
       "item.supreme_armor.swat_helmet": "Swat Helmet",
       "item.supreme_armor.swat_chestplate": "Swat Vest",
+      "itemGroup.tabsupreme_armour": "Supreme Armour",
       "item.supreme_armour.swat_chestplate": "Swat Vest",
       "item.supreme_armour.swat_boots": "Swat Boots"
     }
