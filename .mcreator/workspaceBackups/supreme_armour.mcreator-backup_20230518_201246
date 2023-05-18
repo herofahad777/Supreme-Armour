@@ -21,6 +21,63 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "supreme_armour"
+    },
+    {
+      "name": "SwathelemetOverlay",
+      "type": "overlay",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swathelemet_overlay"
+    },
+    {
+      "name": "SwathelemetOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swathelemet_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
+    },
+    {
+      "name": "SwatHelmetRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swat_helmet_recipe"
+    },
+    {
+      "name": "SwatVestRecipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swat_vest_recipe"
+    },
+    {
+      "name": "SwatLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swat_leggings_recipe"
+    },
+    {
+      "name": "SwatBootsRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swat_boots_recipe"
     }
   ],
   "variable_elements": [],
@@ -52,7 +109,6 @@
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],

@@ -21,6 +21,31 @@
       "compiles": true,
       "locked_code": false,
       "registry_name": "supreme_armour"
+    },
+    {
+      "name": "SwathelemetOverlay",
+      "type": "overlay",
+      "sortid": 3,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swathelemet_overlay"
+    },
+    {
+      "name": "SwathelemetOverlayDisplayOverlayIngame",
+      "type": "procedure",
+      "sortid": 4,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swathelemet_overlay_display_overlay_ingame",
+      "metadata": {
+        "return_type": "logic",
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -52,7 +77,6 @@
     "license": "Academic Free License v3.0",
     "disableForgeVersionCheck": true,
     "serverSideOnly": false,
-    "modPicture": "logo",
     "requiredMods": [],
     "dependencies": [],
     "dependants": [],
