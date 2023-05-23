@@ -46,6 +46,62 @@
           }
         ]
       }
+    },
+    {
+      "name": "SwatHelmetRecipe",
+      "type": "recipe",
+      "sortid": 5,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swat_helmet_recipe"
+    },
+    {
+      "name": "SwatVestRecipe",
+      "type": "recipe",
+      "sortid": 6,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swat_vest_recipe"
+    },
+    {
+      "name": "SwatLeggingsRecipe",
+      "type": "recipe",
+      "sortid": 7,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swat_leggings_recipe"
+    },
+    {
+      "name": "SwatBootsRecipe",
+      "type": "recipe",
+      "sortid": 8,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swat_boots_recipe"
+    },
+    {
+      "name": "PrepareToFight",
+      "type": "achievement",
+      "sortid": 10,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "prepare_to_fight"
+    },
+    {
+      "name": "SwatAdvancementProcedure",
+      "type": "procedure",
+      "sortid": 11,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "swat_advancement_procedure",
+      "metadata": {
+        "dependencies": [
+          {
+            "name": "entity",
+            "type": "entity"
+          }
+        ]
+      }
     }
   ],
   "variable_elements": [],
@@ -54,23 +110,30 @@
     "en_us": {
       "item.supreme_armor.swat_leggings": "Swat Pants",
       "item.supreme_armour.swat_helmet": "Swat Helmet",
+      "advancements.prepare_to_fight.title": "Prepared To Fight",
       "item.supreme_armor.swat_boots": "Swat Boots",
       "item.supreme_armour.swat_leggings": "Swat Pants",
       "item.supreme_armor.swat_helmet": "Swat Helmet",
       "item.supreme_armor.swat_chestplate": "Swat Vest",
       "itemGroup.tabsupreme_armour": "Supreme Armour",
       "item.supreme_armour.swat_chestplate": "Swat Vest",
+      "advancements.prepare_to_fight.descr": "Dress up the full armour of Swat.",
       "item.supreme_armour.swat_boots": "Swat Boots"
     }
   },
   "foldersRoot": {
     "name": "~",
-    "children": []
+    "children": [
+      {
+        "name": "Swat",
+        "children": []
+      }
+    ]
   },
   "workspaceSettings": {
     "modid": "supreme_armour",
     "modName": "Supreme Armour",
-    "version": "0.0.1",
+    "version": "0.2.5",
     "description": "Add a varity of 3D armors to the game",
     "author": "Herofahad777, MCreator",
     "websiteURL": "https://mcreator.net",

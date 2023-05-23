@@ -10,6 +10,12 @@
     "textureLeggings": "swat_armor_leggings",
     "enableBoots": true,
     "textureBoots": "swat_armor_boots",
+    "onHelmetTick": {
+      "name": "SwathelemetOverlayDisplayOverlayIngame"
+    },
+    "onBodyTick": {
+      "name": "SwatAdvancementProcedure"
+    },
     "creativeTab": {
       "value": "CUSTOM:SupremeArmour"
     },

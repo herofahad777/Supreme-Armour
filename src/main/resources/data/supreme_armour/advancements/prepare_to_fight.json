@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "supreme_armour:swat_helmet"
+    },
+    "title": {
+      "translate": "advancements.prepare_to_fight.title"
+    },
+    "description": {
+      "translate": "advancements.prepare_to_fight.descr"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "prepare_to_fight": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 2
+  }
+}
