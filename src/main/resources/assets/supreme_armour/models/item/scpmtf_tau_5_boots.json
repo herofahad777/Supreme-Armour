@@ -1,0 +1,6 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "supreme_armour:items/scp_mtf_tau_5_armour_boots"
+  }
+}

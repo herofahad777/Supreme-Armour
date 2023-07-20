@@ -1,13 +1,17 @@
 {
+  "item.supreme_armor.swat_chestplate": "Swat Vest",
+  "item.supreme_armor.swat_helmet": "Swat Helmet",
+  "item.supreme_armour.swat_chestplate": "Swat Vest",
+  "item.supreme_armour.scpmtf_tau_5_leggings": "SCP MTF Tau 5 Leggings",
+  "advancements.prepare_to_fight.descr": "Dress up the full armour of Swat.",
+  "item.supreme_armour.swat_boots": "Swat Boots",
+  "item.supreme_armour.scpmtf_tau_5_chestplate": "SCP MTF Tau 5 Body",
   "item.supreme_armor.swat_leggings": "Swat Pants",
   "item.supreme_armour.swat_helmet": "Swat Helmet",
   "advancements.prepare_to_fight.title": "Prepared To Fight",
+  "item.supreme_armour.scpmtf_tau_5_helmet": "SCP MTF Tau 5 Helmet",
+  "item.supreme_armour.scpmtf_tau_5_boots": "SCP MTF Tau 5 Boots",
   "item.supreme_armor.swat_boots": "Swat Boots",
   "item.supreme_armour.swat_leggings": "Swat Pants",
-  "item.supreme_armor.swat_helmet": "Swat Helmet",
-  "item.supreme_armor.swat_chestplate": "Swat Vest",
-  "itemGroup.tabsupreme_armour": "Supreme Armour",
-  "item.supreme_armour.swat_chestplate": "Swat Vest",
-  "advancements.prepare_to_fight.descr": "Dress up the full armour of Swat.",
-  "item.supreme_armour.swat_boots": "Swat Boots"
+  "itemGroup.tabsupreme_armour": "Supreme Armour"
 }

@@ -12,7 +12,8 @@
         "el": true,
         "eb": true,
         "ec": true
-      }
+      },
+      "path": "~/Swat"
     },
     {
       "name": "SupremeArmour",
@@ -28,7 +29,8 @@
       "sortid": 3,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "swathelemet_overlay"
+      "registry_name": "swathelemet_overlay",
+      "path": "~/Swat"
     },
     {
       "name": "SwathelemetOverlayDisplayOverlayIngame",
@@ -45,7 +47,8 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Swat"
     },
     {
       "name": "SwatHelmetRecipe",
@@ -53,7 +56,8 @@
       "sortid": 5,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "swat_helmet_recipe"
+      "registry_name": "swat_helmet_recipe",
+      "path": "~/Swat"
     },
     {
       "name": "SwatVestRecipe",
@@ -61,7 +65,8 @@
       "sortid": 6,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "swat_vest_recipe"
+      "registry_name": "swat_vest_recipe",
+      "path": "~/Swat"
     },
     {
       "name": "SwatLeggingsRecipe",
@@ -69,7 +74,8 @@
       "sortid": 7,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "swat_leggings_recipe"
+      "registry_name": "swat_leggings_recipe",
+      "path": "~/Swat"
     },
     {
       "name": "SwatBootsRecipe",
@@ -77,7 +83,8 @@
       "sortid": 8,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "swat_boots_recipe"
+      "registry_name": "swat_boots_recipe",
+      "path": "~/Swat"
     },
     {
       "name": "PrepareToFight",
@@ -85,7 +92,8 @@
       "sortid": 10,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "prepare_to_fight"
+      "registry_name": "prepare_to_fight",
+      "path": "~/Swat"
     },
     {
       "name": "SwatAdvancementProcedure",
@@ -101,24 +109,44 @@
             "type": "entity"
           }
         ]
-      }
+      },
+      "path": "~/Swat"
+    },
+    {
+      "name": "SCPMTFTau5",
+      "type": "armor",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scpmtf_tau_5",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/SCP MTF Tau 5"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.supreme_armor.swat_chestplate": "Swat Vest",
+      "item.supreme_armor.swat_helmet": "Swat Helmet",
+      "item.supreme_armour.swat_chestplate": "Swat Vest",
+      "item.supreme_armour.scpmtf_tau_5_leggings": "SCP MTF Tau 5 Leggings",
+      "advancements.prepare_to_fight.descr": "Dress up the full armour of Swat.",
+      "item.supreme_armour.swat_boots": "Swat Boots",
+      "item.supreme_armour.scpmtf_tau_5_chestplate": "SCP MTF Tau 5 Body",
       "item.supreme_armor.swat_leggings": "Swat Pants",
       "item.supreme_armour.swat_helmet": "Swat Helmet",
       "advancements.prepare_to_fight.title": "Prepared To Fight",
+      "item.supreme_armour.scpmtf_tau_5_helmet": "SCP MTF Tau 5 Helmet",
+      "item.supreme_armour.scpmtf_tau_5_boots": "SCP MTF Tau 5 Boots",
       "item.supreme_armor.swat_boots": "Swat Boots",
       "item.supreme_armour.swat_leggings": "Swat Pants",
-      "item.supreme_armor.swat_helmet": "Swat Helmet",
-      "item.supreme_armor.swat_chestplate": "Swat Vest",
-      "itemGroup.tabsupreme_armour": "Supreme Armour",
-      "item.supreme_armour.swat_chestplate": "Swat Vest",
-      "advancements.prepare_to_fight.descr": "Dress up the full armour of Swat.",
-      "item.supreme_armour.swat_boots": "Swat Boots"
+      "itemGroup.tabsupreme_armour": "Supreme Armour"
     }
   },
   "foldersRoot": {
@@ -127,13 +155,17 @@
       {
         "name": "Swat",
         "children": []
+      },
+      {
+        "name": "SCP MTF Tau 5",
+        "children": []
       }
     ]
   },
   "workspaceSettings": {
     "modid": "supreme_armour",
     "modName": "Supreme Armour",
-    "version": "0.2.5",
+    "version": "0.3.0",
     "description": "Add a varity of 3D armors to the game",
     "author": "Herofahad777, MCreator",
     "websiteURL": "https://mcreator.net",

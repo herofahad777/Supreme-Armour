@@ -1,0 +1,62 @@
+{
+  "_fv": 34,
+  "_type": "armor",
+  "definition": {
+    "enableHelmet": true,
+    "textureHelmet": "scp_mtf_tau_5_armour_helmet",
+    "enableBody": true,
+    "textureBody": "scp_mtf_tau_5_armour_chest_plate",
+    "enableLeggings": true,
+    "textureLeggings": "scp_mtf_tau_5_armour_leggins",
+    "enableBoots": true,
+    "textureBoots": "scp_mtf_tau_5_armour_boots",
+    "creativeTab": {
+      "value": "CUSTOM:SupremeArmour"
+    },
+    "armorTextureFile": "a",
+    "helmetName": "SCP MTF Tau 5 Helmet",
+    "bodyName": "SCP MTF Tau 5 Body",
+    "leggingsName": "SCP MTF Tau 5 Leggings",
+    "bootsName": "SCP MTF Tau 5 Boots",
+    "helmetSpecialInfo": [],
+    "bodySpecialInfo": [],
+    "leggingsSpecialInfo": [],
+    "bootsSpecialInfo": [],
+    "helmetModelName": "ModelSCP_MTF_Tau_5_Armour",
+    "helmetModelPart": "Head",
+    "helmetModelTexture": "scp_mtf_tau-5_armour_tex.png",
+    "bodyModelName": "ModelSCP_MTF_Tau_5_Armour",
+    "bodyModelPart": "Body",
+    "armsModelPartL": "LeftArm",
+    "armsModelPartR": "RightArm",
+    "bodyModelTexture": "scp_mtf_tau-5_armour_tex.png",
+    "leggingsModelName": "ModelSCP_MTF_Tau_5_Armour",
+    "leggingsModelPartL": "LeftLeg",
+    "leggingsModelPartR": "RightLeg",
+    "leggingsModelTexture": "scp_mtf_tau-5_armour_tex.png",
+    "bootsModelName": "ModelSCP_MTF_Tau_5_Armour",
+    "bootsModelPartL": "LeftBoot",
+    "bootsModelPartR": "RightBoot",
+    "bootsModelTexture": "scp_mtf_tau-5_armour_tex.png",
+    "helmetImmuneToFire": false,
+    "bodyImmuneToFire": false,
+    "leggingsImmuneToFire": false,
+    "bootsImmuneToFire": false,
+    "maxDamage": 35,
+    "damageValueHelmet": 6,
+    "damageValueBody": 15,
+    "damageValueLeggings": 8,
+    "damageValueBoots": 4,
+    "enchantability": 15,
+    "toughness": 2.2,
+    "knockbackResistance": 0.0,
+    "equipSound": {
+      "value": "item.armor.equip_diamond"
+    },
+    "repairItems": [
+      {
+        "value": "Items.DIAMOND"
+      }
+    ]
+  }
+}
