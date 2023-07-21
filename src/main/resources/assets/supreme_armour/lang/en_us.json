@@ -13,5 +13,7 @@
   "item.supreme_armour.scpmtf_tau_5_boots": "SCP MTF Tau 5 Boots",
   "item.supreme_armor.swat_boots": "Swat Boots",
   "item.supreme_armour.swat_leggings": "Swat Pants",
-  "itemGroup.tabsupreme_armour": "Supreme Armour"
+  "itemGroup.tabsupreme_armour": "Supreme Armour",
+  "advancements.official_mtf_personal.title": "Official MTF Tau 5 Personal",
+  "advancements.official_mtf_personal.descr": "Wear the full armour set of SCP MTF Tau 5 armour"
 }

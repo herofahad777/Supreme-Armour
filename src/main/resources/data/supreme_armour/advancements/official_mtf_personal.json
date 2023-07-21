@@ -1,0 +1,26 @@
+{
+  "display": {
+    "background": "minecraft:textures/block/stone.png",
+    "icon": {
+      "item": "supreme_armour:scpmtf_tau_5_helmet"
+    },
+    "title": {
+      "translate": "advancements.official_mtf_personal.title"
+    },
+    "description": {
+      "translate": "advancements.official_mtf_personal.descr"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": false
+  },
+  "criteria": {
+    "official_mtf_personal": {
+      "trigger": "minecraft:impossible"
+    }
+  },
+  "rewards": {
+    "experience": 10
+  }
+}

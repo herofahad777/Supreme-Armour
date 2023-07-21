@@ -10,6 +10,9 @@
     "textureLeggings": "scp_mtf_tau_5_armour_leggins",
     "enableBoots": true,
     "textureBoots": "scp_mtf_tau_5_armour_boots",
+    "onHelmetTick": {
+      "name": "SCPMTFTAU5Advancement"
+    },
     "creativeTab": {
       "value": "CUSTOM:SupremeArmour"
     },

@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "012",
+    "3 5"
+  ],
+  "key": {
+    "0": {
+      "item": "minecraft:black_concrete"
+    },
+    "1": {
+      "item": "minecraft:diamond_boots"
+    },
+    "2": {
+      "item": "minecraft:black_concrete"
+    },
+    "3": {
+      "item": "minecraft:iron_ingot"
+    },
+    "5": {
+      "item": "minecraft:iron_ingot"
+    }
+  },
+  "result": {
+    "item": "supreme_armour:scpmtf_tau_5_boots",
+    "count": 1
+  }
+}

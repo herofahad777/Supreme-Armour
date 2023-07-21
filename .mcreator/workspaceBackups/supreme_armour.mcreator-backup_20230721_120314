@@ -21,8 +21,7 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "supreme_armour",
-      "path": "~/Swat"
+      "registry_name": "supreme_armour"
     },
     {
       "name": "SwathelemetOverlay",
@@ -126,6 +125,24 @@
         "eb": true,
         "ec": true
       },
+      "path": "~/SCP MTF Tau 5"
+    },
+    {
+      "name": "SCPMTFTAU5Helmet",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scpmtftau_5_helmet",
+      "path": "~/SCP MTF Tau 5"
+    },
+    {
+      "name": "SCPMTFTAU5Chestplate",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scpmtftau_5_chestplate",
       "path": "~/SCP MTF Tau 5"
     }
   ],

@@ -21,8 +21,7 @@
       "sortid": 2,
       "compiles": true,
       "locked_code": false,
-      "registry_name": "supreme_armour",
-      "path": "~/Swat"
+      "registry_name": "supreme_armour"
     },
     {
       "name": "SwathelemetOverlay",
@@ -112,23 +111,89 @@
         ]
       },
       "path": "~/Swat"
+    },
+    {
+      "name": "SCPMTFTau5",
+      "type": "armor",
+      "sortid": 12,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scpmtf_tau_5",
+      "metadata": {
+        "eh": true,
+        "el": true,
+        "eb": true,
+        "ec": true
+      },
+      "path": "~/SCP MTF Tau 5"
+    },
+    {
+      "name": "SCPMTFTAU5Helmet",
+      "type": "recipe",
+      "sortid": 13,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scpmtftau_5_helmet",
+      "path": "~/SCP MTF Tau 5"
+    },
+    {
+      "name": "SCPMTFTAU5Chestplate",
+      "type": "recipe",
+      "sortid": 14,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scpmtftau_5_chestplate",
+      "path": "~/SCP MTF Tau 5"
+    },
+    {
+      "name": "SCPMTFTAU5Leggings",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scpmtftau_5_leggings",
+      "path": "~/SCP MTF Tau 5"
+    },
+    {
+      "name": "SCPMTFTAU5Boots",
+      "type": "recipe",
+      "sortid": 15,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "scpmtftau_5_boots",
+      "path": "~/SCP MTF Tau 5"
+    },
+    {
+      "name": "OfficialMTFPersonal",
+      "type": "achievement",
+      "sortid": 16,
+      "compiles": true,
+      "locked_code": false,
+      "registry_name": "official_mtf_personal",
+      "path": "~/SCP MTF Tau 5"
     }
   ],
   "variable_elements": [],
   "sound_elements": [],
   "language_map": {
     "en_us": {
+      "item.supreme_armor.swat_chestplate": "Swat Vest",
+      "item.supreme_armor.swat_helmet": "Swat Helmet",
+      "item.supreme_armour.swat_chestplate": "Swat Vest",
+      "item.supreme_armour.scpmtf_tau_5_leggings": "SCP MTF Tau 5 Leggings",
+      "advancements.prepare_to_fight.descr": "Dress up the full armour of Swat.",
+      "item.supreme_armour.swat_boots": "Swat Boots",
+      "item.supreme_armour.scpmtf_tau_5_chestplate": "SCP MTF Tau 5 Body",
       "item.supreme_armor.swat_leggings": "Swat Pants",
       "item.supreme_armour.swat_helmet": "Swat Helmet",
       "advancements.prepare_to_fight.title": "Prepared To Fight",
+      "item.supreme_armour.scpmtf_tau_5_helmet": "SCP MTF Tau 5 Helmet",
+      "item.supreme_armour.scpmtf_tau_5_boots": "SCP MTF Tau 5 Boots",
       "item.supreme_armor.swat_boots": "Swat Boots",
       "item.supreme_armour.swat_leggings": "Swat Pants",
-      "item.supreme_armor.swat_helmet": "Swat Helmet",
-      "item.supreme_armor.swat_chestplate": "Swat Vest",
       "itemGroup.tabsupreme_armour": "Supreme Armour",
-      "item.supreme_armour.swat_chestplate": "Swat Vest",
-      "advancements.prepare_to_fight.descr": "Dress up the full armour of Swat.",
-      "item.supreme_armour.swat_boots": "Swat Boots"
+      "advancements.official_mtf_personal.title": "Official MTF Tau 5 Personal",
+      "advancements.official_mtf_personal.descr": "Wear the full armour set of SCP MTF Tau 5 armour"
     }
   },
   "foldersRoot": {
