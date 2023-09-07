@@ -56,10 +56,6 @@
     "equipSound": {
       "value": "item.armor.equip_diamond"
     },
-    "repairItems": [
-      {
-        "value": "Items.DIAMOND"
-      }
-    ]
+    "repairItems": []
   }
 }
